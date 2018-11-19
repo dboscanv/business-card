@@ -12,7 +12,7 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface BusinessCard {
+  interface BusinessCardWc {
     'address': string;
     'firstName': string;
     'lastName': string;
@@ -21,7 +21,7 @@ export namespace Components {
     'telephone': string;
     'website': string;
   }
-  interface BusinessCardAttributes extends StencilHTMLAttributes {
+  interface BusinessCardWcAttributes extends StencilHTMLAttributes {
     'address'?: string;
     'firstName'?: string;
     'lastName'?: string;
@@ -34,26 +34,26 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'BusinessCard': Components.BusinessCard;
+    'BusinessCardWc': Components.BusinessCardWc;
   }
 
   interface StencilIntrinsicElements {
-    'business-card': Components.BusinessCardAttributes;
+    'business-card-wc': Components.BusinessCardWcAttributes;
   }
 
 
-  interface HTMLBusinessCardElement extends Components.BusinessCard, HTMLStencilElement {}
-  var HTMLBusinessCardElement: {
-    prototype: HTMLBusinessCardElement;
-    new (): HTMLBusinessCardElement;
+  interface HTMLBusinessCardWcElement extends Components.BusinessCardWc, HTMLStencilElement {}
+  var HTMLBusinessCardWcElement: {
+    prototype: HTMLBusinessCardWcElement;
+    new (): HTMLBusinessCardWcElement;
   };
 
   interface HTMLElementTagNameMap {
-    'business-card': HTMLBusinessCardElement
+    'business-card-wc': HTMLBusinessCardWcElement
   }
 
   interface ElementTagNameMap {
-    'business-card': HTMLBusinessCardElement;
+    'business-card-wc': HTMLBusinessCardWcElement;
   }
 
 
