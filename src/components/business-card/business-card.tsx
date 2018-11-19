@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-    tag: 'business-card',
+    tag: 'business-card-wc',
     styleUrl: 'business-card.scss',
     shadow: true
 })
